@@ -15,7 +15,7 @@ body, html{
     width:50%;
     height: 100%;
     background-size: cover;
-    background-image:linear-gradient(to top, rgb(247, 222, 226,0.2), rgb(253, 190, 200,0.2)),url(login_right.jpg);
+    background-image:linear-gradient(to top, rgb(247, 222, 226,0.2), rgb(253, 190, 200,0.2)),url(images/login_right.jpg);
     background-color: white;
     float:left;
 }

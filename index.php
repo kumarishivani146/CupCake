@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Home</title>
-<link rel="icon" type="image/png" href="cupcake_icon.png">
+<link rel="icon" type="image/png" href="images/cupcake_icon.png">
 <link rel="stylesheet" href="index_style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -287,7 +287,7 @@ input.submitbutton.ripplelink {
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid" style="padding: 0;">
-      <a class="navbar-brand" href="#"><img src="logo_no_bg.png" style="width:60px;"alt=""></a>
+      <a class="navbar-brand" href="#"><img src="images/logo_no_bg.png" style="width:60px;"alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -339,7 +339,7 @@ input.submitbutton.ripplelink {
     </div>-->
     </div>
     <div class="carousel-item">
-          <img class="d-block w-100 c1_img" src="main_s2.jpg" alt="Second slide">
+          <img class="d-block w-100 c1_img" src="images/main_s2.jpg" alt="Second slide">
           <!--<div class="carousel-caption d-none d-md-block">
             <h5>
     Banner Text two</h5>
@@ -348,7 +348,7 @@ input.submitbutton.ripplelink {
     </div>-->
     </div>
     <div class="carousel-item">
-          <img class="d-block w-100 c1_img" src="main_s3.jpg" alt="Third slide">
+          <img class="d-block w-100 c1_img" src="images/main_s3.jpg" alt="Third slide">
           <!--<div class="carousel-caption d-none d-md-block">
             <h5>
     Happiness</h5>
@@ -371,7 +371,7 @@ input.submitbutton.ripplelink {
   <br><br>
   <hr>
   <div class="c2" style="text-align: center; margin-top: 80px;">
-    <img src="cupcake_icon.png" alt="">
+    <img src="images/cupcake_icon.png" alt="">
     <div class="desc1" style="width: 55%; ;margin:auto; margin-top:30px;color: brown; line-height: 30px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
       We carefully bake in small batches by hand each day using the finest ingredients sourced from local,
        sustainable, and whenever possible, organic producers. We are proud to offer cupcakes and cakes 
@@ -381,19 +381,19 @@ input.submitbutton.ripplelink {
   <div class="c3">
     <div class="display_flex">
       <div class="flex">
-          <img src="c3_image2.jpg" alt="" class="c3_image">
+          <img src="images/c3_image2.jpg" alt="" class="c3_image">
           <h3>
             Our Designers
           </h3>
       </div>
       <div class="flex">
-          <img src="c3_image1.jpg" alt=""  class="c3_image">
+          <img src="images/c3_image1.jpg" alt=""  class="c3_image">
           <h3>
             Our Cupcakes
           </h3>
       </div>
       <div class="flex">
-          <img src="c3_image3.jpg" alt=""  class="c3_image">
+          <img src="images/c3_image3.jpg" alt=""  class="c3_image">
           <h3>
             Our Bakery
           </h3>
@@ -401,19 +401,19 @@ input.submitbutton.ripplelink {
     </div>
   </div>
   <div class="c4">
-    <img src="Order-Online-1.png"  alt="" style="width: 70%;height: auto;">
+    <img src="images/Order-Online-1.png"  alt="" style="width: 70%;height: auto;">
   </div>
   <div class="c5">
     <div class="display_flex">
       <div class="c5_flex" style="text-align: center;">
         <div class="c5_image1" >
-          <img src="c5_to_try.jpg" style="filter: drop-shadow(5px 5px 5px #222);position: absolute; z-index: 100;margin-top: -50px;margin-left: -125px;" alt="">
+          <img src="images/c5_to_try.jpg" style="filter: drop-shadow(5px 5px 5px #222);position: absolute; z-index: 100;margin-top: -50px;margin-left: -125px;" alt="">
           <div class="div_border" style="width: 355px;height: 457px; border: 5px solid black; position: relative;"></div>
         </div>
       </div>
       <div class="c5_flex" style="display: flex;flex-direction: column;">
         <div class="flex_c5_right1">
-            <img src="c5_image1.jpg" alt="">
+            <img src="images/c5_image1.jpg" alt="">
         </div>
         <div class="flex_c5_right1">
           <div class="p_div" style="width:451px;height:145px;">

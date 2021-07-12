@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
-  <link rel="icon" type="image/png" href="cupcake_icon.png">
+  <link rel="icon" type="image/png" href="images/cupcake_icon.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -252,7 +252,7 @@ input.submitbutton.ripplelink {
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid" style="padding: 0;">
-      <a class="navbar-brand" href="#"><img src="logo_no_bg.png" style="width:60px;"alt=""></a>
+      <a class="navbar-brand" href="#"><img src="images/logo_no_bg.png" style="width:60px;"alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -286,13 +286,13 @@ input.submitbutton.ripplelink {
   </div>
   </nav>
   <div class="c1" style="text-align: center; margin-top: 90px;">
-    <img src="about_c1_image1.png" style="width: 70%;" alt="">
+    <img src="images/about_c1_image1.png" style="width: 70%;" alt="">
   </div>
   <div class="c2" style="text-align: center;">
     <div class="display_flex">
 
       <div class="flex from-left slide-in c3_right_image">
-        <img src="about_c2_image.jpg" alt="" class="c2_flex_image1">
+        <img src="images/about_c2_image.jpg" alt="" class="c2_flex_image1">
       </div>
       <div class="flex from-right slide-in c2_right_text">
         <h3 style="color: rgb(235, 64, 92);">
@@ -323,7 +323,7 @@ input.submitbutton.ripplelink {
         </p>
       </div>
       <div class="flex from-right slide-in c3_right_image">
-        <img src="about_c3_image.jpg" alt="" class="c2_flex_image1">
+        <img src="images/about_c3_image.jpg" alt="" class="c2_flex_image1">
       </div>
     </div>
   </div>
