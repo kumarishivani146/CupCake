@@ -73,7 +73,7 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="column">
-      <img src="contact.jpg" style="width:100%">
+      <img src="images/contact.jpg" style="width:100%">
     </div>
     <div class="column">
       <form action="/action_page.php">

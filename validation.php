@@ -6,6 +6,7 @@ include 'dbcon.php';
     if(isset($_POST['submit'])){
         $name=mysqli_real_escape_string($con,$_POST['name']);
         $email=mysqli_real_escape_string($con,$_POST['email']);
+        $contact=mysqli_real_escape_string($con,$_POST['contact']);
         $password=mysqli_real_escape_string($con,$_POST['password']);
 
         $pass=password_hash($password, PASSWORD_BCRYPT);
@@ -25,7 +26,7 @@ include 'dbcon.php';
             mysql_close();   
         }
         else{
-            $insertquery="insert into registration (name,email,password) values('$name','$email','$pass')";
+            $insertquery="insert into registration (name,email,contact,password) values('$name','$email','$contact','$pass')";
             $iquery=mysqli_query($con,$insertquery);
             if($iquery){
                 $message = 'Inserted sucessfully';

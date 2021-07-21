@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/cupcake_icon.png">
     <title>Login</title>
-    <link rel="icon" type="image/png" href="cupcake_icon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
      integrity="undefined" crossorigin="anonymous">
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
                     Welcome to V3 CupCakes!!
                 </h1>
                 <p style="font-size: 26px;">
-                    Let's bake some amzing CupCakes...
+                Let's bake some amzing CupCakes...
                 </p>
             </div>
             <div class="left-cont2">
@@ -32,7 +32,6 @@
                     <i class="fa fa-youtube fa-lg"></i><i class="fa fa-facebook fa-lg" style="margin-left: 40px;"></i></i><i class="fa fa-instagram fa-lg" style="margin-left: 40px;"></i>
                     
                 </div>
-
                 <div class="flex">
                     &copy;<em id="date"></em>V3 CupCakes
                 </div>
@@ -47,10 +46,10 @@
                                 Sign up
                             </div>
                             <input type="text" class="input-icon" placeholder="&#xf007;    Name" name="name" required>
+                            <input type="integer" class="input-icon" placeholder="&#xf095;    Contact" name="contact" title="Must be 10 digits" pattern="[1-9]{1}[0-9]{9}" required>
                             <input type="email" class="input-icon" placeholder="&#xf0e0;    Work email" name="email" required>
                             <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password" ></span>
                             <input type="password" id="pass_log_id" class="input-icon" placeholder="&#xf023;    Password" name="password" required>
-                            <label style="font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             
                             <input type="submit" name="submit" class="sub" value="Get started now">
                             <h4 class="message" style="margin-left: 2%;margin-top: 7%; color: gray;

@@ -1,17 +1,27 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+    header('location:login.php');
+        exit();
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home</title>
-<link rel="icon" type="image/png" href="images/cupcake_icon.png">
-<link rel="stylesheet" href="index_style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="images/cupcake_icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <style>
 	.carousel-item {
   height: 100vh;
@@ -227,14 +237,6 @@ transition: all 250ms ease-in-out 0s;
 
 }
 
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    background-color: #3e3e3e;
-    color: #fff;
-    padding: 9px;
-    border-radius: 5px;
-}
 
 #subscribe-box .emailfield {
     margin: auto;
@@ -280,12 +282,9 @@ input.submitbutton.ripplelink {
     margin-left: 5px;
     color: ##ffffff;
 }
-
-
 </style>
-</head> 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid" style="padding: 0;">
       <a class="navbar-brand" href="#"><img src="images/logo_no_bg.png" style="width:60px;"alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -295,7 +294,7 @@ input.submitbutton.ripplelink {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
   <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home</a>
+            <a class="nav-link" href="user_index.php">Home</a>
           </li>
   <li class="nav-item">
             <a class="nav-link" href="about.php">About</a>
@@ -304,23 +303,33 @@ input.submitbutton.ripplelink {
             <a class="nav-link" href="Contact Us.php">Contact Us</a>
           </li>
   <li class="nav-item">
-            <a class="nav-link" href="#">Personalized</a>
-          </li>
-  <li class="nav-item">
-            <a class="nav-link" href="#">Our Products</a>
+            <a class="nav-link" href="user_products.php">Our Products</a>
           </li>
         </li>
   <li class="nav-item">
-            <a class="nav-link" href="#">Occasions</a>
+            <a class="nav-link" href="user_cart.php"><i class="fa fa-shopping-cart"></i>My cart</a>
         </li>
   <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
+        <a href="#" style="text-decoration:none;">
+            <p style="color:black;font-weight:bold">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <?php
+                    include 'dbcon.php';
+                    $query=mysqli_query($con,"SELECT * FROM `registration` WHERE id='".$_SESSION['id']."'");
+                    $row=mysqli_fetch_array($query);
+                    echo ''.$row['name'].'';
+                ?>
+            </p>
+        </a>
+        </li>
+  <li class="nav-item">
+            <a class="nav-link" href="logout.php">Logout</a>
         </li>
   </ul>
   </div>
   </div>
   </nav>
-  
+
   <div class="c1">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px;">
       <ol class="carousel-indicators">
@@ -460,9 +469,9 @@ input.submitbutton.ripplelink {
       <div class="col-xs-12 col-sm-6 col-md-3">
 <div class="widget no-box">
 <h5 class="widget-title">Follow up<span></span></h5>
-            <a href="#"> <i class="fa fa-facebook"> </i> </a>
-            <a href="#"> <i class="fa fa-twitter"> </i> </a>
-            <a href="#"> <i class="fa fa-youtube"> </i> </a>
+            <a href="#" style="color:white"> <i class="fa fa-facebook"> </i> </a>
+            <a href="#" style="color:white"> <i class="fa fa-twitter"> </i> </a>
+            <a href="#" style="color:white"> <i class="fa fa-youtube"> </i> </a>
 </div>
 </div>
 <br>
@@ -496,5 +505,7 @@ input.submitbutton.ripplelink {
 </div>
 </div>
 </footer>
+</body>
+</html>
 </body>
 </html>
